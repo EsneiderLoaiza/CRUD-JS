@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CRUD</title>  
+        <link rel="stylesheet" href="../css/stylecrud.css">
+ </head>
+
+<body>
+
+    <header>
+        <h1>Gestión de maquinaria IES</h1>        
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="distribuidoras.html">Distribuidoras</a>
+            <a href="nosotros.html">Nosotros</a>
+        </nav>
+    </div>
+
+    <h1 style="text-align:center;">Ingresar maquina nueva</h1>
+
+    <div id="tabla-ingresar"> <!--div do formulário-->
+        <form id="ingresar_datos">
+            <ul style="list-style-type:none;">
+
+                <li ><label type="text" for="nombre">Tipo de maquina:</label>&nbsp;
+                <input type="text"id="nombre"  size="20" required></li>
+
+                <li><label type="number" for="serie" >Serie:</label>&nbsp;
+                <input type="number" id="serie"  size="20" required></li>
+
+                <li><label type="date" for="fecha">Fecha: </label>&nbsp; 
+                <input type="date" id="fecha"  required><li>
+
+                <li><button type="button" id="agregar">Agregar</button></li>
+            </ul>
+        </form>
+    </div> <!--Formulario-->
+
+
+   
+    <div id="tabla"><!--div da tabela-->
+   
+        <table>
+            <caption><h2>Tabla de datos</h2></caption>
+            <thead>
+                <tr> 
+                    <td>Posición</td>
+                    <td>Tipo de maquina</td>
+                    <td>Serie</td>
+                    <td>Fecha de ingreso</td>
+                </tr>
+             </thead>
+             <tbody id="tabla_de_registro">
+
+
+             </tbody>
+
+        </table>
+    </div> <!--div da tabela-->
+
+
+    <div id="panel_de_cambio">
+            
+        Nome: &nbsp;<input id='cambio_nombre' type="text"  size="z20" required class="alterar_dados">
+        <br>
+        E-mail:&nbsp;<input id='cambio_serie' type="email"  size="20" required class="alterar_dados">
+        <br>
+        Idade:&nbsp;&nbsp;&nbsp;<input type="number" id='fecha_cambio'  required class="alterar_dados">
+        <br>
+        botao_alterar
+        ac
+        <button type="button" id="botao_alterar">Actualizar</button>
+        <button type="button" id="fechar" onclick="fechar_tela()">x</button>
+
+    </div>
+
+    <script type="text/javascript" src="../js/prog.js"></script>
+</body>
+
+
+</html> 

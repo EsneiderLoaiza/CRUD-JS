@@ -1,0 +1,137 @@
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before *::after 
+{
+    box-sizing: inherit;
+}
+body 
+{
+    font-size: 16px; /*1rem = 10px*/
+    font-family: Helvetica;
+    background-image: (to top,#DFE9F3 100%, #ffffff 0%);
+}
+h1
+{
+     margin: 0 auto;  /*Lo centra horizontalmente*/
+}
+header
+{   
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.nav-bg
+{
+    background-color: #29303B;
+}
+.navegacion 
+{
+    max-width: 120rem;
+    margin: 0 auto 0 auto; /*Lo centra horizontalmente*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }   
+}
+
+
+.navegacion a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+}
+.navegacion a:hover
+{
+    background-color: white;
+    color: black;
+}
+.sombra
+{
+    box-shadow: 3px 4px 19px 0px rgba(0,0,0,0.75);
+    background-color: white;
+}
+
+.boton
+{
+    margin: 0 0.5rem;
+    cursor: pointer; /*Poner la mano sobre el boton*/
+}
+.boton-diseño
+{
+    background-color: #29303B;
+    color: white;
+    padding: 1rem 3rem 1rem 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+fieldset
+{
+    padding: 10%;
+}
+.formulario
+{
+    background-color: #29303B;
+    width: min( 60rem, 100% ); /*utiliza el valor más pequeño*/
+    margin: 10rem auto; /*Lo centra horizontalmente, ideal para formularios sin display flex*/
+    padding: 2rem; /*Lo centra en todas las direcciones*/
+    border-radius: 1rem;
+
+}
+.formulario fieldset
+{
+    border: none;
+}
+.formulario legend
+{
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase; /*Mayuscula*/
+    font-weight: bold; /*Negrilla*/
+    margin-bottom: 3rem;
+    color:white;
+}
+.formulario label
+{
+    color: white;
+    font-weight: 550;
+}
+.campo
+{
+    margin-bottom: 2rem;   
+}
+.campo label
+{
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text
+{
+    width: 90%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.boton-ingresar
+{
+    width: 95%;
+    height: 4rem;
+}
+.boton:hover
+{
+    cursor: pointer;/*Poner la mano sobre el boton*/
+}

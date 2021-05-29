@@ -1,0 +1,113 @@
+html
+{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before *::after 
+{
+    box-sizing: inherit;
+}
+body 
+{
+    font-size: 16px; /*1rem = 10px*/
+    font-family: Helvetica;
+    background-image: (to top,#DFE9F3 100%, #ffffff 0%);
+}
+header
+{   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+.nav-bg
+{
+    background-color: #29303B;
+}
+.navegacion 
+{
+    max-width: 120rem;
+    margin: 0 auto 0 auto; /*Lo centra horizontalmente*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }   
+}
+
+
+.navegacion a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem;
+    display: block;
+    text-align: center;
+}
+.navegacion a:hover
+{
+    background-color: white;
+    color: black;
+}
+.formulario
+{
+    background-color: #29303B;
+    width: min( 60rem, 100% ); /*utiliza el valor más pequeño*/
+    margin: 0 auto; /*Lo centra horizontalmente, ideal para formularios sin display flex*/
+    padding: 2rem; /*Lo centra en todas las direcciones*/
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+.formulario fieldset
+{
+    border: none;
+}
+.formulario legend
+{
+    text-align: center;
+    font-size: 1.9rem;
+    text-transform: uppercase; /*Mayuscula*/
+    font-weight: bold; /*Negrilla*/
+    margin-bottom: 3rem;
+    color:white;
+}
+.formulario label
+{
+    color: white;
+    font-weight: 550;
+}
+.contenedor-campos
+{
+
+}
+.campo
+{
+    margin-bottom: 2rem;   
+}
+.campo label
+{
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text
+{
+    width: 90%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.boton
+{
+    width: auto;
+}
+.boton:hover
+{
+    cursor: pointer;/*Poner la mano sobre el boton*/
+}
